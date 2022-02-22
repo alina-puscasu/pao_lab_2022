@@ -29,4 +29,33 @@
  * Un fisier Java poate avea mai multe definitii de clase in el. Insa doar una poate fi publica.
  */
 
+package pao.structure;
+import java.lang.*;
 
+class ClassStructure {
+
+    public static void main(String[] args) {
+        System.out.println("ClassStructure");
+    }
+}
+
+/**
+ * Un fisier Java poate avea mai multe definitii de clase in el. Insa doar una poate fi publica.
+ */
+public class NonPublicClass{
+
+    /**
+     * class field
+     */
+    private int myVariable;
+
+    /**
+     * class method
+     */
+    private void myMethod() {
+
+    }
+}
+
+class AnotherClass {
+}
