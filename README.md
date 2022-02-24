@@ -5,7 +5,7 @@ Punctaj
 
 Etape proiect si termene de predare:
 
-Etapa 1 - 29 martie
+Etapa 1 - 29 martie \n
 Etapa 2 - 3 mai
 Etapa 3 - 31 mai
 
