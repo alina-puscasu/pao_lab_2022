@@ -9,7 +9,13 @@ public class Example2 {
         // => It automatically allocates the right number of spaces, in this case, three, and initializes the value in each one of those spaces.
 
         // Exercise: go through the values array and add everything up
+        float sum = 0.0f;
 
+        for (int i=0; i<values.length; i++) {
+            sum += values[i];
+        }
+
+        System.out.println(sum);
     }
 }
 

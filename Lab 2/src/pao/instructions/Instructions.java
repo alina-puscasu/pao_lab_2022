@@ -9,6 +9,12 @@ public class Instructions {
          * The if expression must be of type boolean.
          */
 
+        if (1<2) {
+            System.out.println("My math needs improving :) ");
+        } else {
+            System.out.println("All is good.");
+        }
+
         /* switch
          *
          * checks if a value supplied in the switch matches any of the cases within. If it does, it moves the execution
@@ -19,6 +25,20 @@ public class Instructions {
          * default case and there is no case that matches, no instructions in the switch are executed.
          */
 
+        int someValue = 10;
+        switch (someValue) {
+            case 1:
+                System.out.println("10");
+            case 2:
+                System.out.println("something");
+            case 4:
+                System.out.println("other");
+                break;
+            default:
+                System.out.println("default branch");
+                break;
+        }
+
 
         /* for
          *
@@ -28,18 +48,33 @@ public class Instructions {
          * body. At the end of each body execution, it runs the steps in the final section.
          */
 
-
+        for (int i = 0, j = 4; i<10 && j <10; i++, j++) {
+            System.out.println(i);
+            System.out.println(j);
+        }
         /* while
          *
          * checks if the boolean condition in the while is true. If so, it executes the body and goes to the start,
          * reevaluating the expression and rerunning if necessary.
          */
 
+        int i = 0;
+        while (i<7) {
+            i++;
+            System.out.println("I am in while");
+        }
+        System.out.println("No while for me");
+
 
         /* do - while
          *
          * Similar to the while, the difference being that it first runs the body and evaluates the expression at the end.
          */
+        int j = 10;
+        do {
+            j++;
+            System.out.println(j);
+        } while (j<10);
 
     }
 

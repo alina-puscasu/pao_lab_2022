@@ -3,7 +3,7 @@ package pao.arrays;
 public class Example1 {
     public static void main(String[] args) {
 
-        float values[] = new float[3];
+        float values[] = new float[3]; // declare and allocate memory
         float[] values2 = new float[3];
 
         // we use the keyword "new" and then float[3] to allocate space to store 3 float values
@@ -13,9 +13,20 @@ public class Example1 {
         values[2] = 15.0f;
 
         // Exercise: go through the values array and add everything up
+        float sum = 0.0f;
 
+        for (int i=0; i < values.length; i++) {
+            sum += values[i];
+        }
 
-        // SAU enhanced for
+        System.out.println("With for: " + sum);
+
+        // enhanced for
+        for (float value : values) {
+            sum += value; // sum = sum + value
+        }
+
+        System.out.println("With enhanced for: " + sum);
 
     }
 }
