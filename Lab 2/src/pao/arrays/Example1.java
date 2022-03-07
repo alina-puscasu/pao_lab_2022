@@ -11,7 +11,7 @@ public class Example1 {
         values[0] = 10.0f;
         values[1] = 20.0f;
         values[2] = 15.0f;
-
+        int size = values.length;
         // Exercise: go through the values array and add everything up
         float sum = 0.0f;
 
