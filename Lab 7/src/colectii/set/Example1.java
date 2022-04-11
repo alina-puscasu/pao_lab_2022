@@ -1,6 +1,7 @@
 package colectii.set;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -30,5 +31,17 @@ public class Example1 {
         treeSetWithComparator.add(5);
         System.out.println("\nUsing TreeSet with comparator:");
         System.out.println(treeSetWithComparator);
+
+        Set<String> linkedHashSet = new LinkedHashSet<>();
+        linkedHashSet.add("B");
+        linkedHashSet.add("A");
+        linkedHashSet.add("D");
+        linkedHashSet.add("E");
+        linkedHashSet.add("C");
+        linkedHashSet.add("F");
+
+        // the order of insertion is preserved
+        System.out.println("\nUsing LinkedHashSet: ");
+        System.out.println(linkedHashSet);
     }
 }
