@@ -20,6 +20,9 @@ public class PersonRepositoryUsingPreparedStatements {
             preparedStatement.setString(1, name);
             preparedStatement.setDouble(2, age);
             preparedStatement.executeUpdate();
+
+            preparedStatement.setDouble(2, 30);
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
